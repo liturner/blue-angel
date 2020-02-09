@@ -1,0 +1,125 @@
+html, body {
+	margin: 0;
+	color: #333;
+	font: Sans-serif;
+	line-height: 34px;
+}
+
+main {
+	margin: auto;
+	max-width: 1024px;
+	padding: 20px;
+}
+
+footer {
+	background-color: #E0E0E0;
+	padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #004a87;
+	font-family: Raleway, Sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 28px;
+	margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h3 {
+	font-size: 26px;
+}
+
+h4 {
+	font-size: 20px;
+	margin-block-start: 0em;
+	margin-block-end: 0.83em;
+}
+
+p {
+	color: #3f3e3e;
+	font-family: Open Sans, Sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 20px;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0em;
+	margin-inline-end: 0em;
+}
+
+ul li {
+	color: #3f3e3e;				/* color of list item text */
+	font-family: Open Sans, Sans-serif;
+	font-size: 20px;
+	list-style: none; 
+	margin: 0 0 16px 1.1225em; 	/* Give the bullet room on the left hand side */
+	margin-bottom: 15px;
+	padding: 0;
+	position: relative;
+}
+
+ul li::before {
+  color: #004a87;		/* color of list bullet */
+  content: "\2022"; 	/* Unicode of character to precede the list item */
+  font-size: 2em; 		/* use em or % */ 
+  left: -1.1225em; 		/* use em, line up bullet flush with left hand side */
+  position: absolute;	/* Set the bullet positioned absolutely top left */
+  top: 0em;				/* use em or % */
+}
+
+#menu-main   {
+    height: 30px; /* set to the height you want your menu to be */
+    margin: auto; /* just to give some spacing */
+	width: 50%;
+}
+
+#menu-main ul    {
+	margin: 0; 
+	padding: 0; /* only needed if you have not done a CSS reset */
+}
+
+/* Reset any existing CSS so that we have a consistent menu */
+#menu-main li::before  {
+	content: ""; 	/* Unicode of character to precede the list item */
+	font-size: 1em; 		/* use em or % */ 
+	left: 0em; 		/* use em, line up bullet flush with left hand side */
+}
+
+#menu-main li    {
+    display: block;
+    float: left;
+    line-height: 30px; /* this should be the same as your #main-nav height */
+    height: 30px; /* this should be the same as your #main-nav height */
+    margin: 5px; padding: 5px; /* only needed if you don't have a reset */
+    position: relative; /* this is needed in order to position sub menus */
+}
+
+#menu-main li a  {
+	color: #ffffff;				/* White buton text */
+	background-color: #004a87;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 15px;
+}
+
+#menu-main .current-menu-item a, #menu-main .current_page_item a, #menu-main a:hover {
+    color: #000;
+    background: #ccc;
+}
+
+.footer-text {
+	color: #3f3e3e;
+	font-family: Raleway, Sans-serif;
+	font-size: 17.6px;
+}
